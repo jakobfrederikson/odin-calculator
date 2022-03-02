@@ -9,5 +9,18 @@ body {
 
 .calculator-container {
     background-color: lightblue;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    gap: 1px;
+}
+
+.calculator-display {
+    grid-column: 1 / -1;
+}
+
+.calculator-button {
+    flex: 1;
+    width: 70px;
+    height: 70px;
 }
