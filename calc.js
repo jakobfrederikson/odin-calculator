@@ -1,5 +1,10 @@
-let displayValue = document.getElementById("display");
-displayValue.innerHTML = "2352435"
+const displayValue = document.getElementById("display");
+const buttons = document.querySelectorAll("#button");
+
+buttons.forEach(button => 
+    button.addEventListener("click", function() {
+    displayValue.innerHTML += button.innerHTML;
+}));
 
 let add = (a, b) => {
     return a + b;
