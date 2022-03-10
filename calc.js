@@ -1,3 +1,6 @@
+let displayValue = document.getElementById("display");
+displayValue.innerHTML = "2352435"
+
 let add = (a, b) => {
     return a + b;
 }
